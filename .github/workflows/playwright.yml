@@ -30,7 +30,7 @@ jobs:
     # Enable tracing by setting the environment variable
     - name: Run Playwright tests with tracing
       run: |
-        pytest test.test.py
+        pytest test_test.py
       env:
         PLAYWRIGHT_TRACE_DIR: traces/  # This is where the traces will be stored
 
