@@ -27,6 +27,9 @@ jobs:
         pip install pytest pytest-playwright
         playwright install
 
+    - name: Create traces directory
+      run: mkdir -p traces/
+
     # Enable tracing by setting the environment variable
     - name: Run Playwright tests with tracing
       run: |
